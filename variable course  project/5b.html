@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>variable</title>
+    </head>
+
+    <body>
+        <button onclick="
+           console.log(`cost: $${cost}`);
+            ">cost</button>
+        <button onclick="
+           cost += costOfCoffee;
+           console.log(`cost: $${cost}`);
+        ">coffee</button>
+        <button onclick="
+           cost += costOfBagel;
+           console.log(`cost: $${cost}`);
+        ">bagel</button>
+        <button onclick="
+           cost += costOfSoup;
+           console.log(`cost: $${cost}`);
+        ">Soup</button>
+        <button onclick="
+           tax = cost * 0.1;
+           console.log(`tax: $${tax}`);
+        ">Tax</button>
+        <button onclick="
+           totalCost = cost + tax;
+           console.log(`Total cost: $${totalCost}`);
+        ">totalCost</button>
+
+        <script>
+            let cost = 0;
+            let tax = 0.1;
+            let costOfCoffee = 5;
+            let costOfBagel = 3;
+            let costOfSoup = 9;
+        </script>
+    </body>
+</html>
